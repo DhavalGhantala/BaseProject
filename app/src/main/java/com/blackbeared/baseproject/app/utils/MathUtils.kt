@@ -17,11 +17,11 @@ class MathUtils(val context: Context) {
         width = displayMetrics.widthPixels
     }
 
-    fun dpTOpx(dp: Float): Float {
+    infix fun dpTOpx(dp: Float): Float {
         return dp * (context.resources.displayMetrics.densityDpi / DisplayMetrics.DENSITY_DEFAULT)
     }
 
-    fun pxTOdp(px: Float, context: Context): Float {
+    fun pxTOdp(px: Float): Float {
         return px / (context.resources.displayMetrics.densityDpi.toFloat() / DisplayMetrics.DENSITY_DEFAULT)
     }
 

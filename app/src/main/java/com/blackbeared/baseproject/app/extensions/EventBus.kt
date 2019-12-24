@@ -6,7 +6,11 @@ fun sendSticky(any: Any) {
     EventBus.getDefault().postSticky(any)
 }
 
-fun send(any: Any) {
+fun Any.send(){
+    EventBus.getDefault().post(this)
+}
+
+fun sendIt(any: Any) {
     EventBus.getDefault().post(any)
 }
 

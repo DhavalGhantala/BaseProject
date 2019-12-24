@@ -8,6 +8,6 @@ class Binder {
     companion object {
 
         @JvmStatic
-        fun getDateString(millis: Long) = millis toDateTimeString DateTimeFormat.DD_MMMM_YY
+        fun getDateString(millis: Long) = millis.toDateTimeString(DateTimeFormat.DD_MMMM_YY)
     }
 }
