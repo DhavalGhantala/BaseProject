@@ -19,6 +19,8 @@ object AppModules {
         single { FileUtils(get()) }
     }
 
+
+
     val dataModule = module {
         single<RepositoryTree> { RepositoryTreeImplementation(get()) }
         single<ApiProvider> { ApiProviderImplementation(get()) }
